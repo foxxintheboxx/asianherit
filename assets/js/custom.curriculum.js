@@ -28,7 +28,7 @@ jQuery( document ).ready( function( $ ){
 
 	// Making navigation sticky on scroll
 
-	$( '#nav' ).sticky( { topSpacing:-1 } );
+	$( '#nav' ).sticky( { topSpacing:0 } );
 
 	$( '#nav ul' ).onePageNav( { scrollSpeed: 400 } );
 
@@ -70,5 +70,8 @@ jQuery( document ).ready( function( $ ){
 	);
 
 	// Full background image
-	$( '.fx-backstretch' ).find( '.info' ).backstretch( 'assets/img/backstretch.jpg' ); // Replace backstrech.jpg with your own image if needed
+    $(".info").backstretch(["assets/img/bk.jpg",
+        "assets/img/festival1.jpg",
+        "assets/img/festival2.jpg"],
+        {duration: 3000});
 });
